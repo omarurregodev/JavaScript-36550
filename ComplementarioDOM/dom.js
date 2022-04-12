@@ -12,9 +12,6 @@ class Jugador {
 
 // Los parametros de partidasJugadas, partidasGanadas y partidasPerdidas van a ser incluídas mas adelante del curso.
 
-let contenedor = document.createElement("div");
-contenedor.innerHTML = "<input style='text'>Ingrese su nombre:</input>";
-
 let inputNombre = document.getElementById("nombre");
 let inputApellido = document.getElementById("apellido");
 let btn = document.getElementById("boton");
@@ -28,7 +25,6 @@ function obtenerDatos(e) {
     let apellido = inputApellido.value;
     console.log(apellido);
     jugadores.push(new Jugador(nombre, apellido)); 
-    
 }
 
 console.log(jugadores);
